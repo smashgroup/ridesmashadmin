@@ -1,0 +1,108 @@
+.datatable{ 
+    height: 400px; 
+    padding:20px ;
+
+    .datatableTitle{
+        display: flex;
+        width: 100%;
+        font-size: 18px;
+        color: gray;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        margin-bottom: 10px;
+
+        .link{
+            color:green;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            margin-right: 20px;
+            border: 1px solid green;
+            border-radius: 5px;
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .cellwithphoto{
+        display: flex;
+        flex-direction: column;
+        width:40px;
+        height: 40px;
+
+        .cellphoto{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 0.5px solid #aca7a7;
+        }
+    }
+    .cellstatus{
+        padding: 5px 10px;
+        border-radius: 5px;
+
+        &.active{
+            color: green;
+            background-color: rgba(0, 128, 0, 0.05);
+        }
+
+        &.pending{
+            color: goldenrod;
+            background-color: rgba(255, 217, 0, 0.05);
+        }
+        &.passive{
+            color: crimson;
+            background-color: rgba(255, 0, 0, 0.05);
+        }
+    }
+
+    .cellAction{
+        display: flex;
+
+        .viewbutton{
+            color: blue;
+            margin-right: 10px;
+            padding:3px 5px;
+            border: 1px solid blue;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .deletebutton{
+            color: red;
+            margin-right: 10px;
+            padding:3px 5px;
+            border: 1px solid red;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.spinner-container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+    @keyframes spinner {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+     }
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 10px solid #f3f3f3; /* Light grey */
+        border-top: 10px solid #383636; /* Black */
+        border-radius: 50%;
+        animation: spinner 1.5s linear infinite;
+      }
+
+}

@@ -1,0 +1,404 @@
+.single{
+    display: flex;
+    width: 100%;
+
+    .singleContainer{
+        flex: 6;
+        
+        .topTitle{
+            display: flex;
+            color: gray;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px;
+            padding-right: 20px;
+        }
+
+        .top{
+            display: flex;
+            padding:20px;
+            gap:20px;
+
+            .left{
+                flex: 1;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0,0,0.47); 
+                box-shadow: 2px 4px 10px 1px  rgba(201, 201,201,0.47);
+                padding: 10px;
+                position: relative;
+
+                .title{
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                .editbutton{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    color: #925592;
+                    background-color: #f1eef7;
+                    padding: 3px 5px;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    margin: 5px 5px 0px 0px;
+                }
+
+                .item{
+                    display: flex;
+                    gap: 20px;
+                    padding: 20px;
+
+                    .itemimg{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        object-fit: contain;
+                        border:1px solid #999999;
+                    }
+
+                    .details{
+                        .itemTitle{
+                            margin-bottom: 10px;
+                            color: #555555;
+                        }
+                        .detailItem{
+                            margin-bottom: 10px;
+                            font-size: 14px; 
+                            margin-top: 20px;
+                            
+                            .itemKey{
+                                font-weight: bold;
+                                margin-right: 10px;
+                                color: gray;
+                            }
+
+                            .itemValue{
+                                font-weight: 300;
+
+                            }
+                        }
+
+
+                    }
+                }
+
+             
+            }
+
+            .right{
+                flex: 2;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0,0,0.47); 
+                box-shadow: 2px 4px 10px 1px  rgba(201, 201,201,0.47);
+                // margin: 20px;
+                padding: 10px;
+             
+            }
+        }
+
+        .bottom{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0,0,0.47); 
+            box-shadow: 2px 4px 10px 1px  rgba(201, 201,201,0.47);
+            margin: 20px;
+            padding: 20px;
+
+            .listTitle{
+                font-weight:500;
+                color: gray;
+                margin-bottom: 15px;
+            }
+            .completedContainer{
+
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                margin:20px;
+                padding: 20px;
+
+                .completed:disabled{
+                    padding: 20px;
+                    font-weight: bold;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    border:none;
+                    background-color:  #ccc;
+                    color: #999;
+                    cursor: no-drop;
+                }
+            }
+
+            .buttonTop{
+                align-items: center;
+                justify-content: space-evenly;
+                display: flex;
+                flex-direction: row;
+                margin:20px;
+                padding: 20px;
+
+                .buttonAccept{
+                    padding: 20px;
+                    background-color: green;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    border:none;
+                    cursor: pointer;
+                }
+
+                .received:disabled{
+                    padding: 20px;
+                    font-weight: bold;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    border:none;
+                    background-color:  #ccc;
+                    color: #999;
+                    cursor: no-drop;
+                }
+
+                .buttonDecline{
+                    padding: 20px;
+                    background-color: red;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    border:none;
+                    cursor: pointer;
+
+                }
+            }
+
+                .buttonBottom{
+                    align-items: center;
+                    justify-content: space-evenly;
+                    display: flex;
+                    flex-direction: row;
+                    margin:20px;
+                    padding: 20px;
+
+                    .processing{
+                        padding: 20px;
+                        background-color: green;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 14px;
+                        border-radius: 5px;
+                        border:none;
+                        cursor: pointer;
+                    }
+
+             
+
+                    .delivering{
+                        padding: 20px;
+                        background-color: green;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 14px;
+                        border-radius: 5px;
+                        border:none;
+                        cursor: pointer;
+                    }
+
+                     .disableDelivering:disabled{
+                        padding: 20px;
+                        font-weight: bold;
+                        font-size: 14px;
+                        border-radius: 5px;
+                        border:none;
+                        background-color:  #ccc;
+                        color: #999;
+                        cursor: no-drop;
+                    }
+
+
+
+                    .delivered{
+                        padding: 20px;
+                        background-color: green;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 14px;
+                        border-radius: 5px;
+                        border:none;
+                        cursor: pointer;
+                    }
+
+                    .disabledDelivered:disabled{
+                        padding: 20px;
+                        font-weight: bold;
+                        font-size: 14px;
+                        border-radius: 5px;
+                        border:none;
+                        background-color:  #ccc;
+                        color: #999;
+                        cursor: no-drop;
+                    }
+
+                    .lines-processing{
+                        width:150px;
+                        border: 5px dashed green;
+                    }
+
+                    .lines-disabledProcessing{
+                        width:150px;
+                        border: 5px dashed #CCC;
+                    }
+                    
+                    .lines-delivering{
+                        width:150px;
+                        border: 5px dashed green;
+                    }
+
+                    .lines-disabledDelivering{
+                        width:150px;
+                        border: 5px dashed #CCC;
+                    }
+
+                  
+
+                  
+                }
+        }
+    }
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+
+    .modalContainer{
+        max-width: 600px;
+        position: fixed;
+        width: 100%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        background-color: white;
+        box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+      
+        img{
+            width: 250px;
+            object-fit: cover;
+        }
+
+        .modalLeft{
+            width: 30%;
+            display:'flex'; 
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .modalRight{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+
+            .closeBtn{
+                position: fixed;
+                top: 8px;
+                right: 8px;
+                cursor: pointer;
+
+            }
+
+            .content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                margin-top: 2rem;
+                padding: 1rem 2rem;
+
+                p{
+                    color: rgb(231, 104, 104);
+                }
+
+                h3{
+                    color: #555555;
+                    margin-top: 10px;
+                }
+            }
+
+            .formContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+
+                 form{
+                    width: 100%;
+
+                    .formInput label{
+                        font-weight:'400';
+                        font-size: 18px;
+                        color: #555555;
+                        margin-right: 10px;
+
+                    }
+
+                    .formInput select{
+                        width: 60%;
+                        height: 40px;
+                        border: 1px solid #999;
+                        padding: 5px;
+                        font-size: 18px;
+                        
+
+                         h2{
+                            font-size: 18px;
+                            color: #999999;
+                        }
+                    }
+                }
+
+            }
+
+            .btnContainer{
+                display: flex;
+                padding: 1rem 1rem;
+                justify-content: center;
+                text-align: center;
+
+                 button{
+                    width: 100%;
+                    margin: 1rem;
+                    padding: 16px 10px;
+                    border: none;
+                    color: #ffffff;
+
+                }
+
+                .btnprimary{
+                    background-color: #339933;
+                    cursor: pointer;
+                    
+                }
+
+                .btnoutline{
+                    background-color: #96ee96;
+                    cursor: pointer;
+                }
+
+                .bold{
+                    font-weight: 600;
+                }
+            }
+
+
+
+
+        }
+    }
+
+
+}

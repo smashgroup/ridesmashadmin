@@ -1,0 +1,24 @@
+.table{
+    .cellWrapper{
+        display: flex;
+        align-items: center;
+
+        .image{
+            width: 60px;
+            height: 60px;
+            border-radius:50%;
+            // object-fit: cover;
+        }
+
+        
+
+        .foot{
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+
+   
+    
+    
+}

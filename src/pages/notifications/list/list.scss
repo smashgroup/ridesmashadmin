@@ -1,0 +1,22 @@
+.list{
+    display:flex;
+ 
+    .listContainer{
+        flex: 6;
+
+        .reviewTitle{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .link{
+                border: 1px solid green;
+                padding: 10px;
+                border-radius: 10px;
+                color: green;
+                
+            }
+        }
+    }
+}

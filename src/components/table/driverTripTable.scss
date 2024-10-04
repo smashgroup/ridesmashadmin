@@ -1,0 +1,29 @@
+.table{
+    .cellWrapper{
+        display: flex;
+        align-items: center;
+
+        .image{
+            width: 60px;
+            height: 60px;
+            border-radius:50%;
+            // object-fit: cover;
+        }
+    }
+    .status{
+        padding: 5px;
+        border-radius: 5px;
+
+        &.delivered{
+            color: green;
+            background-color: rgb(194, 245, 194);
+        }
+        &.canceled{
+            color: goldenrod;
+            background-color: rgb(236, 236, 236);
+        }
+
+    }
+    
+    
+}

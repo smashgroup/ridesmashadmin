@@ -1,0 +1,105 @@
+.dark{
+    background-color: rgb(19, 18, 18);
+
+    .sidebar{
+        border-color:  rgb(19, 18, 18);
+
+        .top{
+
+            border-color:  rgb(19, 18, 18);
+
+            
+            .logo{
+                border-color:  rgb(19, 18, 18);
+            }
+
+        }
+        hr{
+            height: 0;
+            border: 0.5px solid rgb(22, 21, 21);
+        }
+
+        ul{
+            li{
+                &:hover{
+                    background-color: rgb(63, 63, 63);
+                }
+            }
+        }
+
+    }
+    .navbar{
+        border-color: rgb(15, 15, 15);
+
+        .search{
+            border-color: gray;
+
+            input{
+                color: gray;
+            }
+        }
+    }
+    .homeContainer{
+        .widget{
+        
+        
+            .left, .right{
+           
+                .counter{
+                    color: gray;
+                }
+                .link{
+                    color: gray;
+                }
+            }
+        }
+        .chart{
+            .title{
+                color: gray;
+            }
+            .chartGrid{
+                stroke: gray;
+            }
+        }
+
+        .table{
+            background-color: rgb(19, 18, 18);
+
+            .tableRow{
+
+                border-color: rgb(58, 58, 58);
+
+                .tableCell{
+                    color:gray;
+                    border-color: gray;
+                }
+            }
+           
+        }
+    }
+.list{
+    .listContainer{
+        
+    .datatable{
+        .userTableGrid{
+            color: gray;
+            border: none;
+            border-color: gray;
+
+            .viewbutton,
+            .deletebutton,
+            .cellstatus
+            {
+                color: gray;
+                border-color: gray;
+            }
+
+            
+
+        }
+    }
+
+    }
+}
+
+}

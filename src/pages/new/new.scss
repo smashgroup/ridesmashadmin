@@ -1,0 +1,104 @@
+.new{
+    display: flex;
+
+    .newContainer{
+        flex:6;
+
+        .top, .bottom{
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0,0,0.47); 
+            box-shadow: 2px 4px 10px 1px  rgba(201, 201,201,0.47);
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+
+            h1{
+                font-size: 18px;
+                color: lightgray;
+            }
+          
+
+            .left{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .camerawrap{
+                    display: flex;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    background-color: #e0e0e0;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    .camera{
+                        width: 100px;
+                        height: 100px;
+                        color: rgb(170, 170, 170);
+                    }
+
+                    img{
+                        width: 150px;
+                        height: 150px;
+                        border-radius:50%;
+                    }
+
+                }
+
+             
+            }
+
+            .right{
+                flex: 2;
+                
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    justify-content: space-between;
+                    padding: 20px;
+
+                    .formInput{
+                        width: 40%;
+
+                        label{
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+
+                            .icon{
+                                cursor: pointer;
+                            }
+                        }
+
+                        input{
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            border-bottom: 1px solid gray;
+                        }
+
+                       
+                    }
+                    button{
+                        width: 150px;
+                        border: none;
+                        background-color: teal;
+                        padding: 10px;
+                        color: white;
+                        font-size: 18px;
+                        
+                        &:disabled{
+                            background-color: rgb(69, 100, 69);
+                            cursor: not-allowed;
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}

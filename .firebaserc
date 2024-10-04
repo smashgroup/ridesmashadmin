@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "smashride-ee7a7"
+  },
+  "targets": {
+    "smashride-ee7a7": {
+      "hosting": {
+        "admin": [
+          "ridesmashadmin"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
